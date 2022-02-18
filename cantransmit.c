@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 	}
 
 	frame.can_id = 0x555;
-	frame.can_dlc = 5;
+	frame.can_dlc = 8;
 	sprintf(frame.data, "Hello");
 
 	if (write(s, &frame, sizeof(struct can_frame)) != sizeof(struct can_frame)) {
